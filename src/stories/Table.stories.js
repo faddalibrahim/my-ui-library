@@ -24,4 +24,5 @@ Default.args = {
   ],
   style: null,
   shadow: true,
+  limit: 2,
 };

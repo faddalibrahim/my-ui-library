@@ -3,7 +3,14 @@ import PropTypes from "prop-types";
 
 import tableStyles from "./table.module.css";
 
-const Table = ({ caption, headers, body, style, shadow, limit = 2 }) => {
+const Table = ({
+  caption,
+  headers,
+  body,
+  style,
+  shadow,
+  limit = body.length,
+}) => {
   const switchPage = (pageNumber) => {
     let end = Number(pageNumber) * limit;
     let start = end - limit;
@@ -51,11 +58,11 @@ Table.propTypes = {
   /** Title of the table */
   caption: PropTypes.string,
 
-  /**table headers */
-  headers: PropTypes.arrayOf(PropTypes.string),
+  // hello
+  headers: PropTypes.arrayOf(PropTypes.string).isRequired,
 
   /**all rows in the table */
-  body: PropTypes.arrayOf(PropTypes.string),
+  body: PropTypes.arrayOf(PropTypes.string).isRequired,
 
   /**custom additional styling */
   style: PropTypes.objectOf(PropTypes.string),
