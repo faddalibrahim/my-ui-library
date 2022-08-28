@@ -1,14 +1,14 @@
 # My UI Library
 
-personal ui-components library
+my personal ui library
 
 ## Figma Designs
 
 ...not yet
 
-## View Components
+## View Live
 
-...not yet
+[faddal-ui](https://faddal-ui.netlify.app)
 
 ## Sneek Peek
 
