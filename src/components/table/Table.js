@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 import tableStyles from "./table.module.css";
 
-const Table = ({ caption, headers, body, style, shadow, limit = 3 }) => {
+const Table = ({ caption, headers, body, style, shadow, limit = 2 }) => {
   const switchPage = (pageNumber) => {
     let end = Number(pageNumber) * limit;
     let start = end - limit;

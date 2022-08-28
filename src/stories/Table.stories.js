@@ -18,7 +18,7 @@ Default.args = {
     { name: "Dolores Abernathy", school: "Academic City", year: "2022" },
     { name: "Michael Jordan", school: "Winsconsin University", year: "2025" },
     { name: "Farida Sheini", school: "Columbia University", year: "2030" },
-    { name: "Faddal Ibrahim", school: "Columbia University", year: "2050" },
+    { name: "Faddal Ibrahim", school: "Microsoft University", year: "2050" },
     { name: "Alhassan Hassan", school: "Meta University", year: "2040" },
     { name: "Fawzan Abdallah", school: "Apple University", year: "2035" },
   ],
