@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css?family=Google+Sans:200,300,400,500,600,700,900");
+
+.tableWrapper {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.tableWrapper table {
+  border-collapse: collapse;
+  width: -webkit-fill-available;
+  text-align: left;
+  font-family: "Google Sans";
+}
+
+caption {
+  text-align: left;
+  padding: 0 1rem;
+}
+
+th {
+  padding: 1rem;
+}
+
+td {
+  padding: 1rem;
+}
+
+tr {
+  cursor: pointer;
+}
+
+tr:nth-child(even) {
+  background-color: #f5f5f5;
+}
+
+tr:hover {
+  background-color: #fafafa;
+}
+
+.pages {
+  margin: 1rem 0;
+}
+
+.pages small {
+  font-family: "Google Sans";
+  padding: 0.8rem;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 1rem;
+  height: 1rem;
+}
+
+.pages small:hover {
+  background-color: #333;
+  color: white;
+}
