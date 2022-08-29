@@ -31,6 +31,7 @@ const Table = ({
           color: `${page === i + 1 ? "white" : "#333"}`,
           backgroundColor: `${page === i + 1 ? "#333" : "transparent"}`,
         }}
+        key={i}
       >
         {++i}
       </small>
@@ -59,7 +60,7 @@ const Table = ({
           )) ?? <div>loading...</div>}
         </tbody>
       </table>
-      {limit === body.length ? null : (
+      {limit >= body.length ? null : (
         <div className={tableStyles.pages}>
           <center>{pages}</center>
         </div>
