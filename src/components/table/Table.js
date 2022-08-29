@@ -15,14 +15,26 @@ const Table = ({
     let end = Number(pageNumber) * limit;
     let start = end - limit;
 
+    setPage(pageNumber);
     setCurrentRows(body.slice(start, end));
   };
 
   const [currentRows, setCurrentRows] = useState([...body.slice(0, limit)]);
+  const [page, setPage] = useState(1);
 
   let pages = Array(Math.ceil(body.length / limit))
     .fill()
-    .map((v, i) => <small onClick={() => switchPage(i)}>{++i}</small>);
+    .map((v, i) => (
+      <small
+        onClick={() => switchPage(i)}
+        style={{
+          color: `${page === i + 1 ? "white" : "#333"}`,
+          backgroundColor: `${page === i + 1 ? "#333" : "transparent"}`,
+        }}
+      >
+        {++i}
+      </small>
+    ));
 
   return (
     <div className={tableStyles.tableWrapper} style={{ ...style }}>
@@ -47,9 +59,11 @@ const Table = ({
           )) ?? <div>loading...</div>}
         </tbody>
       </table>
-      <div className={tableStyles.pages}>
-        <center>{pages}</center>
-      </div>
+      {limit === body.length ? null : (
+        <div className={tableStyles.pages}>
+          <center>{pages}</center>
+        </div>
+      )}
     </div>
   );
 };
