@@ -38,7 +38,13 @@ const Table = ({
     ));
 
   return (
-    <div className={tableStyles.tableWrapper} style={{ ...style }}>
+    <div
+      className={tableStyles.tableWrapper}
+      style={{
+        ...style,
+        boxShadow: `${shadow ? "rgba(99, 99, 99, 0.2) 0px 2px 8px 0px" : ""}`,
+      }}
+    >
       <table cellSpacing="0">
         <caption>
           <h1>{caption}</h1>

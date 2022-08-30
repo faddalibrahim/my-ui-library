@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Google+Sans:200,300,400,500,600,700,900");
 
 .tableWrapper {
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   border-radius: 1rem;
   padding: 1rem 0;
 }
