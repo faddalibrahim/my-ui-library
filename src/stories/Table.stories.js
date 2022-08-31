@@ -22,7 +22,7 @@ Default.args = {
     { name: "Alhassan Hassan", school: "Meta University", year: "2040" },
     { name: "Fawzan Abdallah", school: "Apple University", year: "2035" },
   ],
-  style: null,
+  style: {},
   shadow: true,
   limit: 2,
 };
