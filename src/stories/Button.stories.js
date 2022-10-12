@@ -1,11 +1,4 @@
-//libraries
-
-// components
 import Button from "../components/button/Button";
-
-// styles
-
-// utils
 
 export default {
   title: "Button",

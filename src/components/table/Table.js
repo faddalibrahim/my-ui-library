@@ -3,6 +3,16 @@ import PropTypes from "prop-types";
 
 import tableStyles from "./table.module.css";
 
+/**
+ *
+ * @param {*} param0
+ * @returns
+ */
+
+/**
+ * TODO : ADD ICON
+ */
+
 const Table = ({
   caption,
   headers,
