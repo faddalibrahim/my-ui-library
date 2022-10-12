@@ -1,0 +1,35 @@
+.button {
+  background-color: #6900bb;
+  padding: 0.7rem 1.2rem;
+  color: white;
+  font-family: "Google Sans";
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  width: fit-content;
+  font-size: 105%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  outline: none;
+  border: none;
+  border-radius: 0.2rem;
+}
+
+.button:hover {
+  background-color: #ec0dbb;
+}
+
+.button:focus {
+  animation: spread 0.3s linear;
+}
+
+@keyframes spread {
+  from {
+    box-shadow: 0 0 0 0 rgba(236, 13, 187, 0.7);
+  }
+
+  to {
+    box-shadow: 0 0 0 1rem rgba(236, 13, 187, 0.1);
+  }
+}
